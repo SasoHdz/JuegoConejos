@@ -26,7 +26,7 @@ body {
     right: 60px;
     width: 80px;
 
-    animation-name: layer;
+   animation-name: layer;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -64,6 +64,7 @@ body {
     bottom: 0;
     left: 60px;
 }
+
 .layer-3 {
     position: absolute;
     z-index: 3;
