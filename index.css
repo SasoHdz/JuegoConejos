@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.phone {
+    position: relative;
+    border: 8px solid black;
+    border-radius: 40px;
+    height: 600px;
+    width: 300px;
+    background: #CCEFFF;
+    box-shadow: 0 19px 38px rgb(0, 0, 0, 0.3) ,
+    0 15px 12px rgb(0, 0, 0, 0.22);
+}
+.layer-1 {
+    position: absolute;
+    z-index: 1;
+    height: 450px;
+    width: 80px;
+    background: rgb(180, 125, 125);
+    bottom: 0;
+    right: 60px;
+}
+
+.layer-2 {
+    position: absolute;
+    z-index: 2;
+    height: 450px;
+    width: 80px;
+    background: rgb(172, 116, 116);
+    bottom: 0;
+    left: 60px;
+}
+.layer-3 {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 220px;
+    height: 400px;
+    background: green;
+    bottom: 0;
+}
+
+.layer-4 {
+    position: absolute;
+    z-index: 4;
+    height: 340px;
+    width: 80px;
+    background: rgb(153, 116, 116);
+    bottom: 0;
+    left: 10px;
+}
+.layer-5 {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    width: 200px;
+    height: 290px;
+    background: rgb(103, 167, 103);
+    bottom: 0;
+}
+
+.layer-6 {
+    position: absolute;
+    z-index: 6;
+    height: 240px;
+    width: 80px;
+    background: rgb(184, 125, 125);
+    bottom: 0;
+    right: 10px;
+}
+.layer-7 {
+    position: absolute;
+    z-index: 7;
+    right: 0;
+    width: 150px;
+    height: 190px;
+    background: rgb(164, 221, 164);
+    bottom: 0;
+}
+
+.layer-8 {
+    position: absolute;
+    z-index: 8;
+    width: 200px;
+    height: 120px;
+    background: rgb(0, 128, 53);
+    bottom: 0;
+    left: 60px;
+}
+.layer-9 {
+    position: absolute;
+    z-index: 9; 
+    width: 90px;
+    height: 90px;
+    background: white;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+}
+
+.layer-10 {
+    position: absolute;
+    z-index: 10;
+    width: 90px;
+    height: 90px;
+    background: white;
+    bottom: 0;
+    right: 0;
+    border-radius: 20px;
+}
+
+.left-ear--outer {
+    background: white;
+    border-radius: 90%;
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+}
+
+.left-ear--inner {
+    background: pink;
+    border-radius: 90%;
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+}
+
+.right-ear--outer {
+    background: white;
+    border-radius: 90%;
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+}
+
+.right-ear--inner {
+    background: pink;
+    border-radius: 90%;
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    right: 15px;
+    top: 8px;
+}
+
+.head {
+    background: white;
+    border-radius: 50%;
+    width: 90%;
+    height: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 30px;
+}
+
+.head__eye {
+    background: rgb(80, 140, 230);
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: 15px;
+}
+
+.head__eye--left{
+    left: 25px;
+}
+
+.head__eye--right{
+    right: 25px;
+}
+
+.montaña {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgb(97, 60, 36);
+    box-shadow: 0 12px 20px rgb(0, 0, 0, 0.3) ,
+    0 15px 12px rgb(0, 0, 0, 0.22);
+    position: relative;
+}
+
+.pasto {
+    width: 100%;
+    height: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgb(0, 128, 53);
+}
+
+.ziczac {
+    background: linear-gradient(135deg, rgb(0, 128, 53) 35%, transparent 35%) -12px 0,
+    linear-gradient(-135deg, rgb(0, 128, 53) 35%, transparent 35%) -12px 0,
+    linear-gradient(45deg, rgb(97, 60, 36) 25%, transparent 25%),
+    linear-gradient(-45deg, rgb(97, 60, 36) 25%, rgb(105, 46, 10) 25%);
+    background-size: 25px 25px;
+    width: 100%;
+    height: 25px;
+}
+
+.circle_pasto {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 128, 53);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.c1 {
+    bottom: 40px;
+    left: -20px;
+}
+
+.c2 {
+    bottom: 60px;
+    left: 45px;
+}
+
+.c3 {
+    bottom: 40px;
+    right: -20px;
+}
+
+.circle_nube {
+    width: 92px;
+    height: 92px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.n1 {
+    bottom: 30px;
+    right: -2px;
+}
+
+.n2 {
+    bottom: 0px;
+    left: 40px;
+}
+
+.n3 {
+    bottom: 30px;
+    right: -2px;
+}
+
+.n4 {
+    bottom: 0px;
+    left: -40px;
+}
