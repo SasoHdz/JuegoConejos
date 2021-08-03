@@ -20,7 +20,6 @@ body {
     z-index: 1;
     height: 450px;
     width: 80px;
-    background: rgb(180, 125, 125);
     bottom: 0;
     right: 60px;
 }
@@ -30,7 +29,6 @@ body {
     z-index: 2;
     height: 450px;
     width: 80px;
-    background: rgb(172, 116, 116);
     bottom: 0;
     left: 60px;
 }
@@ -42,7 +40,6 @@ body {
     margin: 0 auto;
     width: 220px;
     height: 400px;
-    background: green;
     bottom: 0;
 }
 
@@ -51,7 +48,6 @@ body {
     z-index: 4;
     height: 340px;
     width: 80px;
-    background: rgb(153, 116, 116);
     bottom: 0;
     left: 10px;
 }
@@ -62,7 +58,6 @@ body {
     right: 0;
     width: 200px;
     height: 290px;
-    background: rgb(103, 167, 103);
     bottom: 0;
 }
 
@@ -71,7 +66,6 @@ body {
     z-index: 6;
     height: 240px;
     width: 80px;
-    background: rgb(184, 125, 125);
     bottom: 0;
     right: 10px;
 }
@@ -81,7 +75,6 @@ body {
     right: 0;
     width: 150px;
     height: 190px;
-    background: rgb(164, 221, 164);
     bottom: 0;
 }
 
@@ -173,6 +166,26 @@ body {
     height: 4px;
     position: absolute;
     top: 15px;
+
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0% {
+      height: 4px;
+    }
+
+    5% {
+        transform: translateX(0px, 2px);
+        height: 1px;
+    }
+
+    10% {
+        transform: translateX(0px, 0px);
+       height: 4px;
+    }
 }
 
 .head__eye--left{
