@@ -41,20 +41,9 @@ body {
         bottom: -80px;
     }
 
-    90% {
+    100% {
         bottom: 0;
     }
-}
-
-.layer-1 input[type=checkbox] {
-    appearance: none;
-    cursor: pointer;
-    height: 50px;
-    margin: 0;
-    position: relative;
-    top: 0;
-    width: 80px;
-    z-index: 2;
 }
 
 .layer-2 {
@@ -63,6 +52,8 @@ body {
     width: 80px;
     bottom: 0;
     left: 60px;
+
+    animation: layer 2s ease  infinite;
 }
 
 .layer-3 {
@@ -83,6 +74,7 @@ body {
     width: 80px;
     bottom: 0;
     left: 10px;
+    animation: layer 0.5s ease-out infinite;
 }
 .layer-5 {
     position: absolute;
@@ -101,6 +93,7 @@ body {
     width: 80px;
     bottom: 0;
     right: 10px;
+    animation: layer 2s step-end infinite;
 }
 .layer-7 {
     position: absolute;
@@ -310,8 +303,35 @@ body {
     left: -40px;
 }
 
+input[type=checkbox] {
+   appearance: none;
+    cursor: pointer;
+    height: 50px;
+    margin: 0;
+    position: relative;
+    top: 0;
+    width: 80px;
+    z-index: 2;
+}
+
 input:checked {
     counter-increment: game;
+}
+
+h1 {
+    text-align: center;
+}
+
+.title {
+    width: 250px;
+}
+
+.total-count {
+    color: #bf624c;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
 }
 
 .total-count::after {
