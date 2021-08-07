@@ -337,3 +337,22 @@ h1 {
 .total-count::after {
     content: counter(game);
 }
+
+.btn-start {
+    width: 200px;
+    height: 80px;
+    border-radius: 10px;
+    position: relative;
+    top: -520px;
+    z-index: 11;
+    background-color: white;
+    font-size: 2rem;
+    color: pink;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    box-shadow: 10px 13px rgb(0, 0, 0, 0.3);
+}
+
+.hide{
+    display: none;
+}

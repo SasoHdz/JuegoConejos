@@ -61,7 +61,7 @@
         </div> 
         <!-- bunny 4 -->
         <div class="layer-6">
-            <input type="checkbox">
+            <input type="checkbox" onclick="checkIncrement">
             <div class="left-ear--outer"></div>
             <div class="left-ear--inner"></div>
             <div class="right-ear--outer"></div>
@@ -97,5 +97,40 @@
         <h1><img src="https://i.ibb.co/J3Kn71r/cbd152ddb203fe23ad78261749534e7d.png" alt="title" class="title"></h1>
         <h2 class="total-count">Score </h2>
     </div>
+    <button id="btnIniciar" class="btn-start" onclick="empezarJuego()">Iniciar Juego</button>
+    <script>
+
+        const btnEmpezar = document.getElementById('btnIniciar');
+        const total = document.getElementById('total-count');
+        const totalProperty = window.getComputedStyle(total, 'after');
+        var score = totalProperty.getPropertyValue('content');
+
+
+        class Juego { 
+            constructor() {
+                this.inicializar();
+            }
+
+            inicializar() {
+                btnEmpezar.classList.add('hide');
+            }
+
+            jugando(){
+                if(score == 4)
+                {
+                    console.log("ganaste");
+                }
+                console.log(score);
+            }
+        }  
+
+        function empezarJuego() {
+            var juego = new Juego;
+        }
+
+        function checkIncrement(){
+            juego.jugando();
+        }
+    </script>
 </body>
 </html>
