@@ -11,7 +11,7 @@
     <div class="phone">
          <!-- bunny 1 -->
         <div class="layer-1">
-            <input type="checkbox">
+            <input id="check1" type="checkbox" onclick="evaluarJuego()">
             <div class="left-ear--outer"></div>
             <div class="left-ear--inner"></div>
             <div class="right-ear--outer"></div>
@@ -23,7 +23,7 @@
         </div>
         <!-- bunny 2 -->
         <div class="layer-2">
-            <input type="checkbox">
+            <input id="check2" type="checkbox" onclick="evaluarJuego()">
             <div class="left-ear--outer"></div>
             <div class="left-ear--inner"></div>
             <div class="right-ear--outer"></div>
@@ -42,7 +42,7 @@
         </div> 
          <!-- bunny 3 -->
         <div class="layer-4">
-            <input type="checkbox">
+            <input id="check3" type="checkbox" onclick="evaluarJuego()">
             <div class="left-ear--outer"></div>
             <div class="left-ear--inner"></div>
             <div class="right-ear--outer"></div>
@@ -61,7 +61,7 @@
         </div> 
         <!-- bunny 4 -->
         <div class="layer-6">
-            <input type="checkbox" onclick="checkIncrement">
+            <input id="check4" type="checkbox" onclick="evaluarJuego()">
             <div class="left-ear--outer"></div>
             <div class="left-ear--inner"></div>
             <div class="right-ear--outer"></div>
@@ -95,42 +95,9 @@
             <div class="circle_nube n4"></div>
         </div>
         <h1><img src="https://i.ibb.co/J3Kn71r/cbd152ddb203fe23ad78261749534e7d.png" alt="title" class="title"></h1>
-        <h2 class="total-count">Score </h2>
+        <h2 id="score" class="total-count">Score </h2>
     </div>
     <button id="btnIniciar" class="btn-start" onclick="empezarJuego()">Iniciar Juego</button>
-    <script>
-
-        const btnEmpezar = document.getElementById('btnIniciar');
-        const total = document.getElementById('total-count');
-        const totalProperty = window.getComputedStyle(total, 'after');
-        var score = totalProperty.getPropertyValue('content');
-
-
-        class Juego { 
-            constructor() {
-                this.inicializar();
-            }
-
-            inicializar() {
-                btnEmpezar.classList.add('hide');
-            }
-
-            jugando(){
-                if(score == 4)
-                {
-                    console.log("ganaste");
-                }
-                console.log(score);
-            }
-        }  
-
-        function empezarJuego() {
-            var juego = new Juego;
-        }
-
-        function checkIncrement(){
-            juego.jugando();
-        }
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
