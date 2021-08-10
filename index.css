@@ -20,16 +20,12 @@ body {
     overflow: hidden;
 }
 .layer-1 {
-    bottom: 0;
+    bottom: 30px;
     height: 450px;
     position: absolute;
     right: 60px;
     width: 80px;
-
-   animation-name: layer;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    
 }
 
 @keyframes layer {
@@ -46,6 +42,10 @@ body {
     }
 }
 
+@keyframes atrapado {
+    
+}
+
 .layer-2 {
     position: absolute;
     height: 450px;
@@ -53,7 +53,7 @@ body {
     bottom: 0;
     left: 60px;
 
-    animation: layer 2s ease  infinite;
+    animation: layer 1.5s ease  infinite;
 }
 
 .layer-3 {
@@ -74,7 +74,7 @@ body {
     width: 80px;
     bottom: 0;
     left: 10px;
-    animation: layer 0.5s ease-out infinite;
+    animation: layer 2s ease  infinite;
 }
 .layer-5 {
     position: absolute;
@@ -93,7 +93,7 @@ body {
     width: 80px;
     bottom: 0;
     right: 10px;
-    animation: layer 2s step-end infinite;
+    animation: layer 1s ease  infinite;
 }
 .layer-7 {
     position: absolute;
@@ -357,3 +357,15 @@ h1 {
     display: none;
     counter-reset: game;
 }
+
+.bunnySlow {
+    animation: layer 1s ease infinite;
+}
+
+.bunnyIntermedie {
+    animation: layer 0.5s ease-out infinite;
+}
+
+.bunnyFast {
+    animation: layer 0.3s ease-in-out infinite;
+}   
