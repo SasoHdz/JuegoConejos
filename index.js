@@ -1,6 +1,6 @@
-        var juego;
+        let juego;
         const segundosInicial = 30;
-        var segundos = segundosInicial;
+        let segundos = segundosInicial;
         const btnEmpezar = document.getElementById('btnIniciar');
         const score = document.getElementById('score');
        
@@ -43,6 +43,7 @@
                 
                 this.check.forEach(function(check) {
                     check.checked = false;
+                    check.disabled = false;
                 });
 
                 this.bunny.forEach(function(bunny){
@@ -112,13 +113,12 @@
         }
 
         function evaluarJuego() {
-
-            for(var i=0;i<4;i++){
+            juego.contador+=1;
+            for(let i=0;i<4;i++){
                 if(juego.check[i].checked)
                 {
-                    juego.contador+=1;
                     juego.bunny[i].classList.add('capturado');
-
+                    juego.check[i].disabled = true;
                 }
             }
             
@@ -128,7 +128,6 @@
                 
             }
             console.log(juego.contador);
-            juego.contador = 0;
         }
 
         function actualizarTiempo(){
